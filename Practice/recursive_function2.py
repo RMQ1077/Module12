@@ -13,11 +13,11 @@ def factorial(n) :
     if n <= 1 :
         return 1
     else :
-        result = n * factorial(n-1)
+        result = n * factorial(n - 1)
         return result
 
 n = 5
 #Call factorial function and pass n as the argument
-
+print(factorial(n))
 #enter syntax here
-factorial(n)
+
