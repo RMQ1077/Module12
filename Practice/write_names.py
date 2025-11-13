@@ -21,8 +21,10 @@ def main():
 
 #enter syntax here
 def write_names(names) :
-    
-
+    with open('names.txt', 'w') as file :
+        for name in names:
+            firstName, lastName = name.split()
+            file.write(f"first name is {firstName} and last name is {lastName}!\n")
 
 
 main()
