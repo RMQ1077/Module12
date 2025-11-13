@@ -17,9 +17,14 @@ stops calling itself.
 # print "[]" multiplied by sideLength
 
 #enter syntax here
-
+def printTriangle(sideLength) :
+    if sideLength == 0 :
+        return 
+    printTriangle(sideLength - 1)
+    print("[]" * sideLength)
 
 sideLength = 4
 #Call function printTriangle and pass argument sideLength
 
 #enter syntax here
+printTriangle(sideLength)

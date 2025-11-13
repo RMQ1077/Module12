@@ -14,7 +14,8 @@ def main():
     }   
     for student, grades in grade_dictionary.items():
         average = calculate_average(grades)
-        print(f"{student}'s average grade is: {average}")   
+        grade = get_letter_grade(average)
+        print(f"{student}'s average grade is: {grade}")   
 
 # Use stepwise refinement to break down the problem
 # Define a function calculate_average()
@@ -24,13 +25,7 @@ def main():
 # @param average    
 # return letter grade based on average
 
-
-def calculate_average(grade_list):
-    total = 0
-    grade = ""
-    for grade in grade_list:
-        total += int(grade)
-    average = total / len(grade_list)
+def get_letter_grade(average) :
     if average >= 97:
         grade ='A+'
     elif average >= 93:
@@ -59,6 +54,14 @@ def calculate_average(grade_list):
         grade ='F'
     return grade
 
+def calculate_average(grade_list):
+    total = 0
+    grade = ""
+    for grade in grade_list:
+        total += int(grade)
+    average = total / len(grade_list)
+    return average
+    
         
 if __name__ == "__main__": # main entry point execution
     main()
