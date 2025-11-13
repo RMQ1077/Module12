@@ -14,6 +14,7 @@ def main():
     #Call the write_read_file function and pass argument @var string
     
     #enter syntax here
+    write_read_file(string)
  
 ##
 # Define function named write_read_file
@@ -26,6 +27,11 @@ def main():
 # Iterate the file object and print each line using the strip() method.
 
 #enter syntax here
-
+def write_read_file(string) :
+    with open('words.txt', 'w+') as file :
+        file.write(string)
+        file.seek(0)
+        for line in file :
+            print(line.strip())
 
 main()

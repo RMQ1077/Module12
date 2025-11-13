@@ -9,6 +9,9 @@ def main():
     #The result is a display of each line.
 
     #enter syntax here
+    names_list = read_names()
+    for name in names_list :
+        print(name.strip())
  
 ##
 # Define a function named read_names
@@ -19,8 +22,10 @@ def main():
 # return listObj
 
 #enter syntax here
-
-
+def read_names() :
+    with open('names.txt', 'r') as file :
+        listObj = file.readlines()
+    return listObj
 
 main()
 

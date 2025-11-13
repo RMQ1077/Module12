@@ -16,6 +16,18 @@ A stub is a function that returns a simple value that is sufficient for testing 
 # example: if A+ score = 97
 def convert_to_score(letter):
     #enter syntax here
+    if letter == "A+" :
+        return 97
+    if letter == "A" :
+        return 93 
+    if letter == "A-" :
+        return 90
+    if letter == "B+" :
+        return 87
+    if letter == "B" :
+        return 83
+    if letter == "B-" :
+        return 80
     return 90
 
 # Function average_score
