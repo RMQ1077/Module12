@@ -18,6 +18,6 @@ def factorial(n) :
 
 n = 5
 #Call factorial function and pass n as the argument
-print(factorial(n))
+print(f"Factorial of {n} is {factorial(n)}")
 #enter syntax here
 
