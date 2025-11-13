@@ -24,15 +24,14 @@ def withdraw(amount) :
 # add the number to global variable total
 # return None
 
-def sum(number_list) :
-   for i in number_list :
-      i = int(i)
-      total += i
-   return None
-
 total = 50 #Global variable
 
 #enter syntax here
+def sum(number_list) :
+   global total
+   for number in number_list :
+      total += int(number)
+   return None
 
 numbers = ["10", "20","30"]
 
