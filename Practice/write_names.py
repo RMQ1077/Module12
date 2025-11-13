@@ -9,6 +9,7 @@ def main():
     #The result is a new file named 'names.txt' which can be viewed in the Explorer pane.
 
     #enter syntax here
+    write_names(names_list)
 ##
 # Define a function named write_names
 # @param names
@@ -19,7 +20,8 @@ def main():
 # f"first name is {firstName} and last name is {lastName}!\n"
 
 #enter syntax here
-
+def write_names(names) :
+    
 
 
 
